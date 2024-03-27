@@ -9,7 +9,7 @@ public class Attack : MonoBehaviour
 {
     public static int numberOfClicks;
 
-    private Animator animator;
+    public Animator animator;
     public float coolDownTime;
     float nextFireTime = 0f;
     float lastClickTime = 0f;
@@ -18,10 +18,7 @@ public class Attack : MonoBehaviour
 
 
 
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+   
 
     private void Update()
     {
@@ -81,5 +78,13 @@ public class Attack : MonoBehaviour
             animator.SetBool("hit3", true);
         }
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("tiger"))
+        {
+            Debug.Log("tiger damage");
+        }
+    }
+
 }

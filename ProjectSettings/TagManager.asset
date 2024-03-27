@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Rail
   - wayPoints
+  - tiger
   layers:
   - Default
   - TransparentFX

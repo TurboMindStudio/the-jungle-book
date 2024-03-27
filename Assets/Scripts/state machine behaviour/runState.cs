@@ -25,7 +25,7 @@ public class runState : StateMachineBehaviour
 
         float distanceBetweenPlayerandEnemy = Vector3.Distance(playerPosition.position, animator.GetComponent<Transform>().position);
 
-        Debug.Log(distanceBetweenPlayerandEnemy);
+       // Debug.Log(distanceBetweenPlayerandEnemy);
         if (distanceBetweenPlayerandEnemy <= attackingDistance)
         {
             animator.SetBool("isAttacking", true);

@@ -40,7 +40,7 @@ public class walkState : StateMachineBehaviour
 
        
         float distanceBetweenPlayerandEnemy=Vector3.Distance(playerPosition.position,animator.GetComponent<Transform>().position);
-        Debug.Log(distanceBetweenPlayerandEnemy);
+       // Debug.Log(distanceBetweenPlayerandEnemy);
 
 
         if (distanceBetweenPlayerandEnemy <= chasingDistance)
